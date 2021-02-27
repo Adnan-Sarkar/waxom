@@ -1,0 +1,772 @@
+/*=========== common css start ===========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+.section-tittle-content{
+    padding-bottom: 22px;
+}
+.section-tittle-content h2{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #555555;
+    padding-bottom: 17px;
+    text-transform: capitalize;
+}
+.section-tittle-content p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+}
+
+/*=========== common css end ===========*/
+
+/*=========== navbar css start ===========*/
+
+.navbar{
+    padding: 32px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    padding-left: 20px;
+    transition: all linear .3s ;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #c7b299;
+}
+
+/*=========== navbar css end ===========*/
+
+/*=========== banner css start ===========*/
+
+#banner{
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(17, 17, 17, .7);
+}
+.full-height{
+    height: 100vh;
+}
+.banner-content{
+    position: relative;
+    z-index: 99;
+}
+.banner-content h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+.banner-content h1{
+    font-size: 52px;
+    font-weight: 800;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.banner-content p{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    padding-bottom: 52px;
+}
+.banner-content a{
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding: 20px 38px;
+    background: #998675;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-bottom: 3px solid #736357;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.banner-content a:hover{
+    border-bottom-color: #5c4b40;
+}
+
+/*=========== banner css end ===========*/
+
+/*=========== service css start ===========*/
+
+#service{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.service-item{
+    cursor: pointer;
+}
+.service-item i{
+    font-size: 50px;
+    color: #555555;
+    transition: all linear .3s;
+}
+.service-item h3{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #555555;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    transition: all linear .3s;
+}
+.service-item p{
+    font-size: 14px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-weight: 300;
+    padding-bottom: 30px;
+    position: relative;
+}
+.service-item p::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background: #f1eee9;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.service-item:hover i,
+.service-item:hover h3{
+    color: #c7b299;
+}
+.service-item:hover p::after{
+    background: #c7b299;
+}
+
+/*=========== service css end ===========*/
+
+/*=========== projects css start ===========*/
+
+#project{}
+.nav-tabs .nav-link{
+    border: 1px solid #ebebeb;
+    background: transparent;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+    padding: 10px 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+.nav-tabs .nav-link:focus{
+    outline: none;
+}
+.nav-tabs .all-btn{
+    padding: 10px 26px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background: #998675;
+    color: #ffffff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.project-item{
+    cursor: pointer;
+    margin-top: 30px;
+}
+.project-item .project-top{
+    position: relative;
+}
+.project-item .project-top .project-img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, .7);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.project-item .project-top .project-img-overlay .project-icons a i{
+    margin: 0 28px;
+    font-size: 28px;
+    color: #ffffff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.project-item .project-top .project-img-overlay .project-icons a:hover i{
+    color: #c7b299;
+}
+.project-item:hover .project-img-overlay{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.project-item .project-bottom{
+    background: #fbfaf8;
+    padding: 30px 0 28px 28px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.project-item .project-bottom h3{
+    font-size: 20px;
+    color: #c7b299;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+}
+.project-item .project-bottom p{
+    font-size: 14px;
+    color: #d1d1d1;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.project-item:hover .project-bottom{
+    background: #362f2d;
+}
+.project-item:hover .project-bottom h3{
+    color: #ffffff;
+}
+.project-item:hover .project-bottom p{
+    color: #c7b299;
+}
+.project-bottom-btn{
+    padding-top: 53px;
+    padding-bottom: 100px;
+}
+.project-btn{
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding: 20px 38px;
+    background: #998675;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-bottom: 3px solid #736357;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    
+}
+.project-btn:hover{
+    border-bottom-color: #5c4b40;
+    color: #ffffff;
+}
+
+/*=========== projects css end ===========*/
+
+/*=========== video css start ===========*/
+#video{
+    padding-top: 225px;
+    padding-bottom: 250px;
+    background: url(../images/video.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#video::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(17, 17, 17, .7);
+}
+#video .video-content{
+    position: relative;
+    z-index: 99;
+}
+#video .video-content i{
+    line-height: 100px;
+    font-size: 80px;
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    background: rgba(17, 17, 17, .2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+.play-icon{
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+
+    100% { 
+    transform: rotate(360deg); 
+    -webkit-transform: rotate(360deg); 
+    -moz-transform: rotate(360deg); 
+    -ms-transform: rotate(360deg); 
+    -o-transform: rotate(360deg);
+    }
+    
+}
+#video .video-content h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+#video .video-content p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 28px;
+}
+
+/*=========== video css end ===========*/
+
+/*=========== counter css start ===========*/
+
+#counter{
+    background: linear-gradient(to right, #211b19, #4e3427);
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.counter-content i{
+    color: #c7b299;
+    font-size: 45px;
+}
+.counter-content h3{
+    color: white;
+    font-size: 48px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.counter-content p{
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+/*=========== counter css end ===========*/
+
+/*=========== post css end ===========*/
+
+#post{
+    padding-top: 92px;
+    padding-bottom: 90px;
+}
+.post-item{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.post-item:focus{
+    outline: none;
+}
+.post-item .post-top{
+    position: relative;
+}
+.post-item .post-top .post-img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, .7);
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.post-item .post-top .post-date{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 60px;
+    border-radius: 3px;
+    z-index: 99999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.post-item .post-top .post-date .date-top{
+    background: #363636;
+    width: 50px;
+    height: 35px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.post-item .post-top .post-date .date-top span{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 35px;
+}
+.post-item .post-top .post-date .date-bottom{
+    background: #252525;
+    width: 50px;
+    height: 25px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.post-item .post-top .post-date .date-bottom span{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+}
+.post-item:hover .post-date .date-top{
+    background: #c7b299;
+}
+.post-item:hover .post-date .date-bottom{
+    background: #a48d72;
+}
+.post-item:hover .post-img-overlay{
+    opacity: 1;
+}
+.post-item .post-bottom{
+    border: 1px solid #f8f8f8;
+    border-top: 0px;
+    padding: 30px 0 28px 28px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.post-item .post-bottom h3{
+    font-size: 20px;
+    color: #555555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.post-item .post-bottom p{
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+    padding-right: 30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.post-item .post-bottom a{
+    font-size: 14px;
+    color: #c7b299;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.post-item .post-bottom a i{
+    padding-left: 10px;
+}
+.post-item:hover .post-bottom{
+    border-color: #362f2d;
+    background: #362f2d;
+}
+.post-item:hover .post-bottom h3{
+    color: #c7b299;
+}
+.post-item:hover .post-bottom p{
+    color: #ffffff;
+}
+.post-item .post-bottom a:hover{
+    color: #ffffff;
+}
+
+/*=========== post css end ===========*/
+
+/*=========== footer css start ===========*/
+
+#footer{
+    background: #191919;
+    padding: 80px 0;
+}
+.footer-content-one p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    color: #b1b1b1;
+    padding-top: 30px;
+}
+.footer-content-one a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #d1d1d1;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.footer-content-one a i{
+    padding-left: 10px;
+}
+.footer-content-one a:hover{
+    color: #ffffff;
+}
+#footer-tittle{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.footer-content-item{
+    cursor: pointer;
+    border-bottom: 1px solid #252525;
+    margin-bottom: 20px;
+}
+.footer-content-item h6{
+    color: #b1b1b1;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.footer-content-item p{
+    color: #b1b1b1;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    padding-top: 4px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.footer-content-item:hover h6{
+    color: #ffffff;
+}
+.footer-content-item:hover p{
+    color: #c7b299;
+}
+.footer-third-col h6{
+    line-height: 20px;
+    margin-top: -4px;
+}
+.footer-third-col h6 span{
+    color: #00bff3;
+}
+.footer-third-col p{
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+#footer-link{
+    color: #e9e9e9;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+#footer-link:hover{
+    color: #00bff3;
+}
+.dribble-images{
+    margin-left: 12px;
+}
+.dribble-img{
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+.dribble-img img{
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.dribble-img a:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/*=========== footer css end ===========*/
+
+/*=========== copyright css start ===========*/
+
+#copyright{
+    background-color: #111111;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.copyright-content-left ul li{
+    color: #555555;
+    margin-right: 12px;
+    padding-right: 12px;
+    border-right: 1px solid #252525;
+}
+.copyright-content-left ul li:last-child{
+    border-right: none;
+}
+.copyright-content-left ul li span{
+    color: #959595;
+}
+.copyright-content-left ul li a{
+    color: #555555;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.copyright-content-left ul li a:hover{
+    color: #c7b299;
+}
+.copyright-content-right ul li{
+    color: #555555;
+}
+.copyright-content-right ul li:first-child{
+    margin-right: 12px;
+    padding-right: 12px;
+    border-right: 1px solid #252525;
+}
+.copyright-content-right ul li a{
+    color: #959595;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.copyright-content-right ul li a:hover{
+    color: #c7b299;
+}
+
+/*=========== copyright css end ===========*/
+
+
+
+
